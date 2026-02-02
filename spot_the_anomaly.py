@@ -24,14 +24,14 @@ def preview(x):
     plt.title("Time series (anomaly hidden)")
     plt.tight_layout()
     plt.show(block=False)
-    plt.pause(3)
+    plt.pause(20)
     plt.close()
 
 def main():
     x = series()
     truth = inject(x)
 
-    print("\nInspect the signal. You have a few seconds.\n")
+    print("\nInspect the signal. You have 20 seconds.\n")
     preview(x)
 
     try:
